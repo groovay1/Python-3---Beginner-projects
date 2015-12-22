@@ -1,0 +1,11 @@
+
+import datetime
+agenow = int(input("Enter your age: "))
+today = datetime.date.today()
+currentYear = int(today.year)
+turningHundred = 100-agenow+int(currentYear)
+
+print('The year you are turning 100 will be',str(turningHundred))
+
+
+
