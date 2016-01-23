@@ -1,0 +1,25 @@
+print('Enter integers and then type break when done')
+print('This program returns a list of numbers less than an integer you select')
+count = 0
+integer = input('Enter an integer maximum for your list')
+integer = int(integer)
+while True:
+    x = []
+    new_x = []
+    num = input('enter a number')
+    
+    if num == 'break' or num == '':
+        break
+    else:
+        num = int(num)
+        x = x.append(num)
+        count = count + 1
+        
+for i in range(1,count):
+    if i<=integer:
+      new_x.append(i)
+    else:
+        pass
+print(new_x)    
+
+
