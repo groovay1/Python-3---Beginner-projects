@@ -1,43 +1,22 @@
-print("write a sentence") 
-
-new_sentence = input()
-
-print("Length of sentence is " + str(len(new_sentence)))
-
-print(new_sentence[2])
-squares = []
-
 
 import string
-#this is a simple  into a dictionary
-new_sentence.split()
 
+print('How many letters will you enter?')
+num_of_letters = int(input())
 
-
-#This assigns values to numbers
-values = dict()
+letter_values = dict()
 for index, letter in enumerate(string.ascii_lowercase):
-   values[letter] = index + 1
-print(values)
+    letter_values[letter] = index + 1
 
+#print(list(letter_values.items()))
 
-for letter, number in values.items():
-  a1 = number*2
-  print(letter + ' numnber is ' + str(number))
+for x in range(0,num_of_letters):
+    print("Input a letter")
+    first_letter = input()
+    print(letter_values.get(first_letter))
+    print(letter_values[first_letter]*2)
 
+#print(values.items())
 
-leng = len(new_sentence)
-for x in new_sentence:
-  squares.append(x)
-  #if x = a or b or c or d or e;
-  
-  
-    
-    
-  
-  
-print(squares)
-
-#leng = len(new_sentence)
-##for x in (0,leng);
-#  print(x)
+#for first_letter, number in letter_values.items():
+#if first_letter == 'a':
