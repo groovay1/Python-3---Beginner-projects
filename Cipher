@@ -4,19 +4,35 @@ import string
 print('How many letters will you enter?')
 num_of_letters = int(input())
 
+def abcde():
+
+    print('new letter value is ' + str((letter_values[letter]*2)))
+    new_letter_value = (letter_values[letter]*2)
+    alphabet_list = list(string.ascii_lowercase)
+    print("new letter is encrypted to", str(alphabet_list[new_letter_value]))
+
+# this not really needed -just repeats the numerical value of the letter
+#    print(letter_values.get(letter))
+
+def fghij():
+    print('new letter value is ' + str((letter_values[letter] * 10)))
+    print("not one of the allowed letters yet")
+
+#creates a dictionary with letter number key values
 letter_values = dict()
 for index, letter in enumerate(string.ascii_lowercase):
     letter_values[letter] = index + 1
 
 #print(list(letter_values.items()))
-
 for x in range(0,num_of_letters):
-    print("Input a letter")
-    first_letter = input()
-    print(letter_values.get(first_letter))
-    print(letter_values[first_letter]*2)
+    letter = input()
+    if letter == 'a' or 'b' or 'c' or 'd' or 'e':
+        abcde()
+    elif letter == 'f' or 'g' or 'h' or 'i' or 'j':
+        fghij()
+    else:
+        pass
 
 #print(values.items())
-
 #for first_letter, number in letter_values.items():
 #if first_letter == 'a':
